@@ -76,7 +76,7 @@ header {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-end;
-    margin: 0 0 30px 0;
+    margin: 30px 0;
 }
 
 header nav {
@@ -91,7 +91,7 @@ header nav a:visited {
     text-decoration: none;
 }
 
-header img {
+header .jumbo {
     padding-top: 40px;
 }
 
@@ -251,4 +251,59 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media screen and (max-width: 420px) {
+
+    .container {
+        max-width: 100%;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    header {
+        margin-top: 20px;
+    }
+
+    header .logo {
+        padding: 0 0 20px 20px;
+    }
+
+    header nav,
+    footer nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header nav a,
+    footer nav a {
+        width: 100%;
+        padding: 20px;
+        border-bottom: 1px solid #000;
+    }
+
+    header nav a:last-child,
+    footer nav a:last-child {
+        border-bottom: 0px;
+    }
+
+    header .jumbo {
+        padding-top: 0px;
+    }
+
+    .bottom-content {
+        flex-wrap: wrap;
+    }
+
+    .top-content .text-container,
+    .bottom-content .text-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .about-item {
+        width: 100%;
+    }
 }
