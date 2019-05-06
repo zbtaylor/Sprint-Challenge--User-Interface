@@ -103,10 +103,42 @@ header img {
     border-bottom: 1px dashed black;
 }
 
+.about-page .top-content {
+    display: block;
+}
+
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
+}
+
+.about-page .top-content .text-container {
+    width: 100%;
+}
+
+.about-page .middle-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-item {
+    width: 48%;
+    margin: 0 1% 40px 1%;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.about-item a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
 }
 
 .middle-content {
@@ -114,9 +146,18 @@ header img {
     border-bottom: 1px dashed black;
 }
 
+.about-page .middle-content {
+    border: none;
+    margin-bottom: 0;
+}
+
 .middle-content h2 {
     padding: 0 2%;
     margin-bottom: 0;
+}
+
+.about-page .middle-content h2 {
+    padding: 2% 0 4% 0;
 }
 
 .middle-content .boxes {
@@ -175,7 +216,6 @@ header img {
     background-color: dodgerblue;
 }
 
-
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -188,6 +228,10 @@ header img {
 
 .bottom-content .text-container:last-child {
     padding-right: 0;
+}
+
+.about-page .bottom-content {
+    margin: 0 2% 40px 2%;
 }
 
 footer {
