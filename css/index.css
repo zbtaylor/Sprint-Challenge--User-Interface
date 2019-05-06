@@ -103,7 +103,8 @@ header .jumbo {
     border-bottom: 1px dashed black;
 }
 
-.about-page .top-content {
+.about-page .top-content,
+.contact-page .top-content {
     display: block;
 }
 
@@ -113,11 +114,13 @@ header .jumbo {
     padding-bottom: 20px;  
 }
 
-.about-page .top-content .text-container {
+.about-page .top-content .text-container,
+.contact-page .top-content .text-container {
     width: 100%;
 }
 
-.about-page .middle-content {
+.about-page .middle-content,
+.contact-page .middle-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -146,9 +149,14 @@ header .jumbo {
     border-bottom: 1px dashed black;
 }
 
-.about-page .middle-content {
+.about-page .middle-content,
+.contact-page .middle-content {
     border: none;
     margin-bottom: 0;
+}
+
+.contact-page .middle-content {
+    align-items: flex-start;
 }
 
 .middle-content h2 {
@@ -214,6 +222,31 @@ header .jumbo {
 
 .dodgerblue-bg {
     background-color: dodgerblue;
+}
+
+form {
+    width: 48%;
+    padding: 0 2% 0 0;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    background-color: dodgerblue;
+    color: white;
+}
+
+input[type="submit"]:hover {
+    background-color: teal;
+    cursor: pointer;
 }
 
 .bottom-content {
@@ -305,5 +338,10 @@ footer nav a {
 
     .about-item {
         width: 100%;
+    }
+
+    form {
+        width: 98%;
+        padding: 0 1%;
     }
 }
